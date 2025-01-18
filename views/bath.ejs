@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/lightbox.css">
+  <script src="./js/main.js"></script>
+  <script src="./js/lightbox.js"></script>
+  <title>bath</title>
+  <!-- https://www.webnode.com/el/leptomereies-template/cb0h0w/?_gl=1%2A9u5j7n%2A_up%2AMQ..&gclid=EAIaIQobChMIg6vxo_61hgMVu4ZoCR0dJQT1EAAYASAAEgKJ8PD_BwE -->
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <%- include('header.ejs'); %>
+      <main id="bath">
+        <h1>Σετ μπάνιου</h1>
+        <div class="col4">
+          <figure class="product">
+            <img onclick="getLightBox('./images/cat-a.jpg')" src="./images/cat-a.jpg">
+            <figcaption>Σετ Μπάνιου Λεβάντα <br> <span>19,00</span></figcaption>
+          </figure>
+          <figure class="product">
+            <img onclick="getLightBox('./images/cat-b.jpg')" src="./images/cat-b.jpg">
+            <figcaption>Μίνι Σετ Βανίλια<br> <span>23,00</span></figcaption>
+          </figure>
+          <figure class="product">
+            <img onclick="getLightBox('./images/cat-c.jpg')" src="./images/cat-c.jpg">
+            <figcaption>Μίνι Σετ Μέντα<br> <span>23,00</span></figcaption>
+          </figure>
+          <figure class="product">
+            <img onclick="getLightBox('./images/cat-d.jpg')" src="./images/cat-d.jpg">
+            <figcaption>Σετ Μπάνιου Λεβάντα<br> <span>29,00</span></figcaption>
+          </figure>
+
+          <figure class="product">
+            <img onclick="getLightBox('./images/cat-a.jpg')" src="./images/cat-a.jpg">
+            <figcaption>Σετ Μπάνιου Λεβάντα <br> <span>19,00</span></figcaption>
+          </figure>
+          <figure class="product">
+            <img onclick="getLightBox('./images/bath-a.jpg')" src="./images/bath-a.jpg">
+            <figcaption>Σετ Ylang-ylang<br> <span>23,00</span></figcaption>
+          </figure>
+          <figure class="product">
+            <img onclick="getLightBox('./images/bath-b.jpg')" src="./images/bath-b.jpg">
+            <figcaption> Σετ Μπάνιου Neroli<br> <span>29,00</span></figcaption>
+          </figure>
+          <figure class="product">
+            <img onclick="getLightBox('./images/bath-c.jpg')" src="./images/bath-c.jpg">
+            <figcaption>Σετ Μπάνιου Bergamot<br> <span>19,00</span></figcaption>
+          </figure>
+        </div>
+
+      </main>
+  </div> <!-- end wrapper -->
+
+  <%- include('footer.ejs'); %>
+</body>
+
+</html>

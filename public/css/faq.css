@@ -1,0 +1,15 @@
+h2 {
+    margin: 1.5rem 0 1rem;
+}
+
+p {
+    margin-left: 2rem;
+    columns: 2;
+    column-gap: 3rem;
+}
+
+@media (width <= 900px) {
+    p {
+        columns: unset;
+    }
+}

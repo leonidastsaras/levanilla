@@ -1,0 +1,36 @@
+
+main#about section.about-a {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    margin-top: 5rem;
+}
+main#about section.about-a div{
+    width: 100%;
+}
+
+main#about section.about-a :last-child h2 {
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+main#about section.about-a :last-child p {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+     
+main#about section.about-a :first-child img {
+    width: 100%;
+}
+
+main#about h1 {
+    text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+    main#about section.about-a {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+}
