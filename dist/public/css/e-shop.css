@@ -1,0 +1,36 @@
+.col2 {
+    display: flex;
+    gap: 6%;
+    margin: 2rem 0;
+}
+
+.col2 > a {
+    width: 100%;
+    color: var(--prinaryColor);
+}
+
+.col2 > a:hover {
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.col2 > a > figure {
+    width: 100%;
+}
+
+.col2 > a > figure > img {
+    width: 100%;
+}
+
+.col2 > a > figure > figcaption {
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 1rem;
+    text-decoration: underline;
+    text-underline-offset: .7rem;
+}
+
+@media screen and (max-width: 900px) {
+    .col2 {
+        flex-wrap: wrap;
+    }
+}

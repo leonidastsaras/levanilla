@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/e-shop.css">
+  <script src="./js/main.js"></script>
+  <title>e-shop</title>
+  <!-- https://www.webnode.com/el/leptomereies-template/cb0h0w/?_gl=1%2A9u5j7n%2A_up%2AMQ..&gclid=EAIaIQobChMIg6vxo_61hgMVu4ZoCR0dJQT1EAAYASAAEgKJ8PD_BwE -->
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <%- include('header.ejs'); %>
+      <main id="e-shop">
+        <h1>Κατηγορίες</h1>
+        <section class="col2">
+
+          <a href="/bath">
+            <figure class="category">
+              <img src="./images/category-a.jpg" alt="">
+              <figcaption>Σετ μπάνιου</figcaption>
+            </figure>
+          </a>
+
+          <a href="/soap">
+            <figure class="category">
+              <img src="./images/category-b.jpg" alt="">
+              <figcaption>Χειροποίητα σαπούνια</figcaption>
+            </figure>
+          </a>
+        </section>
+
+      </main>
+  </div> <!-- end wrapper -->
+
+  <%- include('footer.ejs'); %>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <script src="./js/main.js"></script>
+
+  <title>Document</title>
+  <!-- https://www.webnode.com/el/leptomereies-template/cb0h0w/?_gl=1%2A9u5j7n%2A_up%2AMQ..&gclid=EAIaIQobChMIg6vxo_61hgMVu4ZoCR0dJQT1EAAYASAAEgKJ8PD_BwE -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <%- include('header.ejs'); %>
+      <div id="weather-time">
+        <span>Ώρα: </span>
+        <span>Η θερμοκρασία στην Αθήνα: </span>
+      </div>
+
+      <main id="home">
+        <section class="home-a">
+          <div>
+            <h1>Σαπούνια, αλάτια & έλαια</h1>
+            <p>Μετατρέψτε το μπάνιο σε μοναδική εμπειρία</p>
+            <a href="#" class="button">Αγοράστε τώρα</a>
+          </div>
+          <div>
+            <img src="./images/home-a.jpg" alt="">
+          </div>
+        </section>
+
+  </div> <!-- end wrapper -->
+
+
+  <section class="home-b">
+    <div class="wrapper">
+      <div>
+        <img src="./images/home-b.jpg" alt="">
+      </div>
+      <div>
+        <h1>Ομορφαίνουμε τη μπανιέρα σας από το 1996</h1>
+        <p> </p>
+        <a href="#" class="button">Περισσότερα για εμάς</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrapper">
+    <section class="home-c">
+      <h2>Τα πιο δημοφιλή σετ μπάνιου</h2>
+      <div class="col4">
+        <figure class="product">
+          <img src="./images/cat-a.jpg">
+          <figcaption>Σετ Μπάνιου Λεβάντα <br> <span>19,00</span></figcaption>
+        </figure>
+        <figure class="product">
+          <img src="./images/cat-b.jpg">
+          <figcaption>Μίνι Σετ Βανίλια<br> <span>23,00</span></figcaption>
+        </figure>
+        <figure class="product">
+          <img src="./images/cat-c.jpg">
+          <figcaption>Μίνι Σετ Μέντα<br> <span>23,00</span></figcaption>
+        </figure>
+        <figure class="product">
+          <img src="./images/cat-d.jpg">
+          <figcaption>Σετ Μπάνιου Λεβάντα<br> <span>29,00</span></figcaption>
+        </figure>
+      </div>
+      <a href="#" class="button">Όλες οι κατηγορίες</a>
+    </section>
+  </div>
+  </main>
+
+  <%- include('footer.ejs'); %>
+
+    </div> <!-- end wrapper -->
+
+    <script src="./js/weather.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <script src="./js/main.js"></script>
+  <title>Επικοινωνία</title>
+  <!-- https://www.webnode.com/el/leptomereies-template/cb0h0w/?_gl=1%2A9u5j7n%2A_up%2AMQ..&gclid=EAIaIQobChMIg6vxo_61hgMVu4ZoCR0dJQT1EAAYASAAEgKJ8PD_BwE -->
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <%- include('header.ejs'); %>
+      <main id="contact">
+        <h1>Επικοινωνία</h1>
+        <section class="col2">
+          <div>
+            <h2>LE VANILLA</h2>
+            <p>Φυγιθ ποπυλω πορρω σριπθα λαορεεθ υθ φιμ νε σιθ ανσιλλαε δελισαθισιμι νες επισυρι μνεσαρσχυμ ιδ δισερετ
+              διγνισιμ αβχορρεανθ υθ νες ευ κυο μεις μινιμ ηις ιδ ενιμ ετιαμ ωφφενδιθ ει εαμ πορρω δισερε ερυδιθι
+              δολορες
+              σενσιβυς πρι αν σιθ πυρθο ελιγενδι ατ.</p>
+
+            <!-- <img src="./images/social/tel.svg" alt=""> -->
+            <div class="social">
+              <!-- <a href="tel:+309874563210"><img src="./images/social/tel.svg" alt=""></a> -->
+              <a href="mailto:info@mysite.gr"><img src="./images/social/email.svg" alt=""></a>
+              <a href="https://www.facebook.com/profile..."><img src="./images/social/facebook.svg" alt=""></a>
+              <a href="https://msng.link"><img src="./images/social/instagram.svg" alt=""></a>
+              <a href=""><img src="./images/social/messenger.svg" alt=""></a>
+              <a href="https://wa.me/309874563210"><img src="./images/social/whatsapp.svg" alt=""></a>
+              <a href="https://msng.link/o?30987456321=vi"><img src="./images/social/viber.svg" alt=""></a>
+            </div>
+
+            <!-- <p><b>Email:</b> demo@webnode.com</p>
+                    <p><b>Τηλέφωνο:</b> 154-175-4301</p> -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.654473290722!2d23.730625820986194!3d37.98519222807882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd30fd1f40a3%3A0xef61f4697a86173d!2sAkadimias%2090%2C%20Athina%20106%2077!5e0!3m2!1sen!2sgr!4v1719501392078!5m2!1sen!2sgr"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div>
+            <form id="contact" action="https://example.com/contact.php" method="post"
+              onsubmit="return validateContactForm(event)">
+              <input type="text" value="" placeholder="Ονομα Επώνυμο" name="fullname">
+              <input type="email" placeholder="e-mail" name="email">
+              <input type="text" placeholder="Θέμα" name="subject">
+              <textarea rows="6" name="body"></textarea>
+              <input type="submit" value="Αποστολή" id="submit">
+              <p id="form-message"> </p>
+            </form>
+          </div>
+        </section>
+
+      </main>
+  </div> <!-- end wrapper -->
+
+  <%- include('footer.ejs'); %>
+</body>
+
+</html>

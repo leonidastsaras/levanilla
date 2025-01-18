@@ -1,0 +1,100 @@
+
+
+form#contact {
+    background-color: white;
+    width: 100%;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgb(230, 230, 230);
+    border: solid thin lightgray;
+  }
+
+  form#contact input {
+    display: block;
+    border: solid thin lightgray;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgb(250, 250, 250);
+    color: var(--prinaryColor);
+  }
+
+  form#contact input:focus {
+    border: solid thin var(--prinaryColor);
+  }
+
+  form#contact input#submit {
+    color: var(--prinaryColor);
+    padding: 1rem 3rem;
+    border: solid thin rgb(102, 102, 102);
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    width:fit-content;
+}
+
+form#contact input#submit:hover {
+    color: rgb(57, 57, 57);
+    border-color: rgb(57, 57, 57);
+}
+
+  form#contact textarea {
+    display: block;
+    border: solid thin lightgray;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgb(250, 250, 250);
+    color: var(--prinaryColor);
+  }
+
+  form#contact textarea:focus {
+    border: solid thin var(--prinaryColor);
+  }
+
+.col2 {
+    display: flex;
+    gap: 6%;
+    margin: 2rem 0;
+}
+
+.col2 > div {
+    width: 100%;
+}
+
+.col2 > div > iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.col2 > div > div.social {
+  margin: 2rem 0;
+}
+
+.col2 > div > div.social > a {
+  margin-right: 0.5rem;
+}
+
+    p#form-message {
+      border: solid thin lightgray;
+      padding: 4px;
+      font-weight: bold;
+    }
+
+    .error {
+      color: red;
+    }
+
+    .success {
+      color: green;
+    }
+
+
+@media screen and (max-width: 900px) {
+  .col2 {
+    flex-wrap: wrap;
+  }
+
+  form#contact {
+    margin-top: 2rem;
+  }
+}
