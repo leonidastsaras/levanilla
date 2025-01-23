@@ -1,0 +1,3 @@
+{"fullname":"jason brown","email":"jason@brown.com","subject":"no subject","message":"this is a new message"}
+{"fullname":"first name","email":"first@myserver.gr","subject":"no subject","message":"this is a test"}
+{"fullname":"first name","email":"first@myserver.gr","subject":"no subject","message":"this is a test"}

@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/contact.css">
   <script src="./js/main.js"></script>
-  <title>Επικοινωνία</title>
+  <meta name="description" content="<%=description %>">
+  <title>
+    <%= title %>
+  </title>
 </head>
 
 <body>
@@ -41,12 +44,12 @@
               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div>
-            <form id="contact" action="https://example.com/contact.php" method="post"
-              onsubmit="return validateContactForm(event)">
+            <!--  onsubmit="return validateContactForm(event)" -->
+            <form id="contact" action="/contact" method="post">
               <input type="text" value="" placeholder="Ονομα Επώνυμο" name="fullname">
               <input type="email" placeholder="e-mail" name="email">
               <input type="text" placeholder="Θέμα" name="subject">
-              <textarea rows="6" name="body"></textarea>
+              <textarea rows="6" name="message"></textarea>
               <input type="submit" value="Αποστολή" id="submit">
               <p id="form-message"> </p>
             </form>
